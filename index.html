@@ -13,7 +13,7 @@
     </head>
     <body>
 	<header>
-            <nav>
+	    <nav>
 		<ul class="w3-navbar w3-xlarge w3-green w3-left-align">
 		    <li class="w3-hide-medium w3-hide-large w3-green w3-opennav w3-right w3-margin">
 			<a href="javascript:void(0);" onclick="myFunction()">☰</a>
@@ -32,30 +32,216 @@
             </nav>
 	</header>
 
-	<div class="main-page">
-	    <section class="w3-col m7">
-		
+	<div class="main-page w3-row-padding">
+
+	    <section class="controle-jeu w3-card-4 w3-col m5 l4 ">
+		<section class="">
+		    <div class="score">
+			<p class="w3-padding">Joueur: </p>
+			<p class="w3-padding">Score: </p>
+		    </div>
+
+		    <div class="play">
+			<button class="w3-btn w3-teal">
+			    Jouer
+			</button>
+		    </div>
+		</section>
+
+
+
+		<section class="color-choice w3-padding">
+
+		    <button class="w3-btn color purple" ></button>
+		    <button class="w3-btn color blue"></button>
+		    <button class="w3-btn color green"></button>
+		    <button class="w3-btn color yellow"></button>
+		    <button class="w3-btn color orange"></button>
+		    <button class="w3-btn color red" onclick="chooseColor('#8e001c')"></button>
+
+		</section>
+
+		<section class="controle w3-margin w3-btn-group">
+		    <button class="w3-btn w3-green w3-small"> Jouer</button>
+		    <button class="w3-btn w3-green w3-small">Undo</button>
+		    <button class="w3-btn w3-green w3-small">Soumettre</button>
+		    <button class="w3-btn w3-green w3-small">Quitter</button>
+		</section>
+	    </section>
+	    <section class="w3-col s0 m1 l2 w3-hide-small ">
 	    </section>
 
-	    <section class="w3-col m5">
-		
+	    <section class="plateau-jeu w3-card-4 w3-col m6 l4 ">
+		<section class="plateau">
+		    <div class="line" id="line-10">
+			<div class="combinaison w3-col s10" >
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			</div>
+			<div class="resultat w3-col s2">
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			</div>
+		    </div>
+		    <div class="line" id="line-9">
+			<div class="combinaison w3-col s10" id="line-8">
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			</div>
+			<div class="resultat w3-col s2">
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			</div>
+		    </div>
+		    <div class="line" id="line-8">
+			<div class="combinaison w3-col s10">
+			    <div class="pion w3-circle "></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			</div>
+			<div class="resultat w3-col s2">
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			</div>
+		    </div>
+		    <div class="line" id="line-7">
+			<div class="combinaison w3-col s10">
+			    <div class="pion w3-circle "></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			</div>
+			<div class="resultat w3-col s2">
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			</div>
+		    </div>
+		    <div class="line" id="line-6">
+			<div class="combinaison w3-col s10">
+			    <div class="pion w3-circle "></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			</div>
+			<div class="resultat w3-col s2">
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			</div>
+		    </div>
+		    <div class="line" id="line-5">
+			<div class="combinaison w3-col s10">
+			    <div class="pion w3-circle "></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			</div>
+			<div class="resultat w3-col s2">
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			</div>
+		    </div>
+		    <div class="line" id="line-4">
+			<div class="combinaison w3-col s10">
+			    <div class="pion w3-circle "></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			</div>
+			<div class="resultat w3-col s2">
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			</div>
+		    </div>
+		    <div class="line" id="line-3">
+			<div class="combinaison w3-col s10">
+			    <div class="pion w3-circle "></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			</div>
+			<div class="resultat w3-col s2">
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			</div>
+		    </div>
+		    <div class="line" id="line-2">
+			<div class="combinaison w3-col s10">
+			    <div class="pion w3-circle "></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			    <div class="pion w3-circle"></div>
+			</div>
+			<div class="resultat w3-col s2">
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			</div>
+		    </div>
+		    <div class="line" id="line-1">
+			<div class="combinaison w3-col s10">
+			    <div class="pion pion-0 w3-circle "></div>
+			    <div class="pion pion-1 w3-circle"></div>
+			    <div class="pion pion-2 w3-circle"></div>
+			    <div class="pion pion-3 w3-circle"></div>
+			</div>
+			<div class="resultat w3-col s2">
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			    <div class="pion-resultat"></div>
+			</div>
+		    </div>
+
+		    <div class="line w3-row">
+			<div class="combinaison w3-col s10">
+			    <div class="pion w3-round"></div>
+			    <div class="pion w3-round"></div>
+			    <div class="pion w3-round"></div>
+			    <div class="pion w3-round"></div>
+			</div>
+			<div class="resultat w3-col s2 w3-center">
+			    <button type="button" class="show-response w3-small">X</button>
+			</div>
+		    </div>
+		</section>
 	    </section>
+
+
 	</div>
 
 
-
+	<script type="text/javascript" src="mastermind.js"></script>
 	<script>
 	 function myFunction() {
 	     var x = document.getElementById("nav");
 	     if (x.className.indexOf("w3-show") == -1) {
 		 x.className += " w3-show";
-	     } else { 
+	     } else {
 		 x.className = x.className.replace(" w3-show", "");
 	     }
 	 }
 	</script>
     </body>
 </html>
-
-
-
