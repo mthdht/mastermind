@@ -30,6 +30,13 @@ p {
     font-size: 14px;
 }
 
+p#message {
+    color: #888562;
+    text-align: center;
+    height: 30px;
+    font-size: 18px;
+}
+
 /* style for play button */
 div.play {
     display:flex;
